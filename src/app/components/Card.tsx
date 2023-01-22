@@ -5,7 +5,7 @@ export interface card {
 }
 
 const Card = ({ img, title, description }: card) => {
-	let imgRoute = `w-72 h-3/5 rounded-t-lg bg-yosemite bg-cover`;
+	let imgRoute = `w-72 h-3/5 rounded-t-lg bg-${img} bg-cover`;
 
 	return (
 		<div className="Card w-full h-full ">

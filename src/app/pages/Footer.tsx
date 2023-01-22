@@ -5,8 +5,8 @@ const Footer = () => {
 			id="nosotros"
 		>
 			<p className="text-xl font-bold dark:text-white">Developed by Jefferson Munguia</p>
-			<a href="" className="text-2xl bi bi-github dark:text-white"></a>
-			<a href="" className="text-2xl bi bi-linkedin dark:text-white"></a>
+			<a href="https://github.com/Yeffersonn/Travel-Company" target='_blank'      className="text-2xl bi bi-github dark:text-white" rel="noopener" ></a>
+			{/* <a href="#" className="text-2xl bi bi-linkedin dark:text-white"></a> */}
 		</footer>
 	);
 };
