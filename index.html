@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+		/>
+		<title>Travel Company</title>
+	</head>
+	<body class="dark:bg-gray-900">
+		<div id="root"></div>
+		<script type="module" src="/src/main.tsx"></script>
+		<script>
+			setTimeout(() => {
+				const htmlElement = document.querySelector("html");
+				const toggleButton = document.querySelector("#toggle");
+				const targetIcon = document.querySelector(".bi-moon-fill");
+				const targetIcon2 = document.querySelector("#toggle-sm .bi-moon-fill");
+				const toggleButtonSm = document.querySelector("#toggle-sm");
+
+				toggleButton.addEventListener("click", () => toggleDarkMode());
+				toggleButtonSm.addEventListener("click", () =>
+					toggleDarkMode()
+				);
+
+				const toggleDarkMode = () => {
+					if(htmlElement.classList.contains("dark")){
+						htmlElement.classList.remove("dark")
+						targetIcon.classList.remove('bi-moon-fill')
+						targetIcon.classList.add('bi-brightness-high-fill')
+						targetIcon2.classList.remove('bi-moon-fill')
+						targetIcon2.classList.add('bi-brightness-high-fill')
+					}else{
+						htmlElement.classList.add("dark");
+						targetIcon.classList.remove('bi-brightness-high-fill')
+						targetIcon.classList.add('bi-moon-fill')
+						targetIcon2.classList.remove('bi-brightness-high-fill')
+						targetIcon2.classList.add('bi-moon-fill')
+					}
+				};
+			}, 2000);
+		</script>
+	</body>
+</html>

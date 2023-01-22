@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+	scroll-behavior: smooth;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+.Card{
+	@apply shadow-md rounded-lg transform transition-all hover:-translate-y-4 hover:shadow-xl
+}
+
+.CardTitle{
+	@apply text-3xl px-8 pt-8 pb-1 font-semibold text-white
+}
+
+
