@@ -12,7 +12,9 @@ const Card = ({ img, title, description }: card) => {
 			<div
 				id="image-container"
 				className={imgRoute}
-			></div>
+			>
+				<img className="h-full w-full object-cover" src={`./../../img/${img}.jpg`} alt={title} />
+			</div>
 			<div className=" h-2/5 rounded-b-lg dark:bg-gray-800 ">
 				<p className="text-xl px-4 py-2 font-semibold text-tertiary dark:text-white">
 					{title}
