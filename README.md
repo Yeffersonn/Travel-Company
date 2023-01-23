@@ -1,2 +1,3 @@
 # Travel-Company
-Using TypeScript, React, Tailwind
+Using TypeScript, React, Tailwind, Responsive Design
+
