@@ -24,7 +24,7 @@ const Home = () => {
 			<div className="w-full h-full bg-cover lg:bg-cover lg:bg-sanFranciscoDesktop lg:bg-center">
 				<img
 					className="w-full h-full lg:hidden"
-					src="./../../../public/img/sanFrancisco.jpg"
+					src="../../img/sanFrancisco.jpg"
 					alt="San Francisco"
 				/>
 			</div>
