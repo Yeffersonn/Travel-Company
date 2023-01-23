@@ -1,6 +1,6 @@
 const TavBar = () => {
 	return (
-		<div className="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center dark:bg-gray-800 lg:hidden">
+		<div className="w-full h-16 bg-white fixed  left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center dark:bg-gray-800 lg:hidden">
 			<a href="#home">
 				<i className="bi bi-house-door-fill dark:text-white md:text-2xl"></i>
 			</a>

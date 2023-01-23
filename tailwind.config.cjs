@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
+const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require("tailwindcss/colors");
 
 module.exports = {
@@ -7,6 +8,10 @@ module.exports = {
 	darkMode: 'class', /* for media or class */
 	theme: {
 		extend: {
+			screens: {
+				'xs': '375px',
+				...defaultTheme.screens,
+			  },
 			backgroundImage: {
 				sanFrancisco: "url('./img/sanFrancisco.jpg')",
 				sanFranciscoDesktop: "url('./img/sanFranciscoDesktop.jpg')",

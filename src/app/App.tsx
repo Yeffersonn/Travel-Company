@@ -13,20 +13,16 @@ function App() {
 			<section className="w-full h-screen">
 				<NavBar />
 				<Home />
-				<div className="w-full h-auto lg:px-2 ">
+				<div className="w-full h-auto lg:px-2">
 					<Recomendados />
 					<Destacados />
 					{/* <Faqs/> */}
 					<Footer />
 				</div>
+				<br />
+				<br />
 			</section>
 			<TavBar />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
-			<br />
 		</Fragment>
 	);
 }
